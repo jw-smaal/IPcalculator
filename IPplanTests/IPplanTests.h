@@ -7,13 +7,13 @@
 //
 
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "IPaddress.h"
 #import "IPplan.h"
 #import <math.h>
 
 
-@interface IPplanTests : SenTestCase {
+@interface IPplanTests : XCTestCase {
 @private
     
 }

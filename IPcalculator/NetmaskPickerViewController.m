@@ -68,7 +68,7 @@
 			return [NSString stringWithFormat:@"/%d", row];
 			break; // never reached but who cares 			
 		case NETMASK:	
-			ipa = [NetmaskArray objectAtIndex:row];
+			ipa = NetmaskArray[row];
 			return ipa.maskText;
 			break; // Never reached.
 		default:
@@ -85,7 +85,7 @@
 	IPAddress *ipa;
 	
 	// Vraag om een pointer uit de array.
-	ipa = [NetmaskArray objectAtIndex:row];
+	ipa = NetmaskArray[row];
 	// De gebruiker heeft deze waarde gekozen, 
 	numberOfBits = ipa.bitmask;
 	
@@ -103,7 +103,7 @@
 }
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {

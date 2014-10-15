@@ -18,7 +18,7 @@
 
 
 #pragma mark Constructors
--(id)init{	
+-(instancetype)init{	
 	self = [super init];
 	
 	if(self){
@@ -43,7 +43,7 @@
 }
 
 
--(id)initWithParentBlock:(IPAddress *)ipa 
+-(instancetype)initWithParentBlock:(IPAddress *)ipa 
 				  childs:(uint32_t)childsarg 
 				   hosts:(uint32_t)hostsarg{	
 	self = [super init];

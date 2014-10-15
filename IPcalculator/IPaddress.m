@@ -22,7 +22,7 @@
  * Instance methods 
  * ----------------
  */
--(id)init {
+-(instancetype)init {
 	self = [super init];
 	
 	if(self){
@@ -31,7 +31,7 @@
 	return self;
 }
 
--(id)initWithData:(uint32_t) ipa
+-(instancetype)initWithData:(uint32_t) ipa
 				mask:(uint32_t) bitmaska{
 	self.ip = ipa;
 	self.bitmask = bitmaska;
@@ -331,10 +331,10 @@
 		return 0;	
 	}
 	
-	stra = [tmparr objectAtIndex:0];
-	strb = [tmparr objectAtIndex:1];
-	strc = [tmparr objectAtIndex:2];
-	strd = [tmparr objectAtIndex:3];
+	stra = tmparr[0];
+	strb = tmparr[1];
+	strc = tmparr[2];
+	strd = tmparr[3];
 	
 	ret = 0xff000000&([stra intValue]<<24);
 	ret = ret | (0x00ff0000&([strb intValue]<<16));
