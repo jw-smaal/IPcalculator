@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'IPplanTests' target in the 'IPplanTests' project
-//
-
-#ifdef __OBJC__
-	#import <UIKit/UIKit.h>
-#endif
